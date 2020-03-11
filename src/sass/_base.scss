@@ -1,0 +1,45 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+// Webfonts
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
+
+// Mixin
+$breakpoints: (
+  'md': 'screen and (max-width: 767px)',
+) !default;
+@mixin mq($breakpoint: md) {
+  @media #{map-get($breakpoints, $breakpoint)} {
+    @content;
+  }
+}
+
+// Variables
+$color-white: #ffffff;
+$color-black: #282828;
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif;
+  font-feature-settings: "pkna" 1;
+}
+
+ul, li{
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+a {
+  color: $color-black;
+  text-decoration: none;
+  &:visited {
+    color: $color-black;
+  }
+}
+
+p {
+  margin: 0;
+}
