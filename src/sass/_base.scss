@@ -22,12 +22,12 @@ $color-white: #ffffff;
 $color-black: #282828;
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, Roboto, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif;
+  font-family:  Roboto, -apple-system, BlinkMacSystemFont, "游ゴシック体", YuGothic, "Yu Gothic Medium", sans-serif;
   font-feature-settings: "pkna" 1;
 }
 
-ul, li{
-  margin: 0;
+ul, li {
+  margin: 100px;
   padding: 0;
   list-style-type: none;
 }
